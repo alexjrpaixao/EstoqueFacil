@@ -1,54 +1,174 @@
-# EstoqueFácil 3.0
+\# EstoqueFácil
 
-Sistema web de controle de estoque e vendas para pequeno negócio/MEI, com foco em simplicidade, segurança e gestão.
 
-## O que há nesta versão
 
-- Dashboard com faturamento de hoje/mês, vendas, ticket médio, estoque baixo e gráfico dos últimos 7 dias.
-- Cadastro e edição de produtos e categorias.
-- Cadastro de clientes e fornecedores.
-- Entrada e saída de estoque com movimentações.
-- Nova venda com cliente, forma de pagamento e desconto.
-- Consolidação de produtos repetidos no carrinho e validação transacional do estoque.
-- Histórico de vendas com impressão e cancelamento/estorno.
-- Cancelamento devolve automaticamente os itens ao estoque e registra estorno.
-- Relatórios de período, produtos mais vendidos, estoque baixo e resumo por forma de pagamento.
-- Exportação CSV e impressão.
-- Autenticação com senha armazenada por scrypt e rotas protegidas.
+Sistema web de controle de estoque e vendas desenvolvido para pequeno negócio/MEI, com foco em simplicidade, organização, segurança e facilidade de uso.
 
-## Tecnologias
 
-React + Vite, Node.js + Express e PostgreSQL.
 
-## Instalação
+\## Sobre o projeto
 
-### Banco
 
-Execute `database/schema.sql` no PostgreSQL.
 
-### Backend
+O EstoqueFácil é uma aplicação web desenvolvida para auxiliar pequenos negócios no controle de produtos, estoque, vendas, clientes e fornecedores.
 
-```bash
-cd backend
-npm install
-cp .env.example .env
-npm start
-```
 
-### Frontend
 
-```bash
-cd frontend
-npm install
-cp .env.example .env
-npm run dev
-```
+O sistema foi desenvolvido como projeto acadêmico e também foi pensado para ser utilizado na rotina de um pequeno empreendedor.
 
-O frontend usa `VITE_API_URL` e, por padrão, aponta para `http://localhost:3001/api`.
 
-## Acesso inicial
 
-- E-mail: `admin@estoquefacil.com`
-- Senha: `123456`
+\## Funcionalidades
 
-Troque a senha antes de colocar o sistema em produção.
+
+
+\- Dashboard com resumo das vendas e do estoque.
+
+\- Visualização do faturamento do dia e do mês.
+
+\- Indicador de ticket médio.
+
+\- Identificação de produtos com estoque baixo.
+
+\- Gráfico de vendas dos últimos 7 dias.
+
+\- Cadastro, edição e gerenciamento de produtos.
+
+\- Cadastro e gerenciamento de categorias.
+
+\- Cadastro de clientes.
+
+\- Cadastro de fornecedores.
+
+\- Entrada de produtos no estoque.
+
+\- Saída de produtos do estoque.
+
+\- Histórico de movimentações.
+
+\- Registro de vendas.
+
+\- Seleção de cliente na venda.
+
+\- Seleção da forma de pagamento.
+
+\- Aplicação de desconto.
+
+\- Carrinho de vendas com consolidação de produtos repetidos.
+
+\- Validação do estoque durante a venda.
+
+\- Histórico de vendas.
+
+\- Impressão de vendas.
+
+\- Cancelamento e estorno de vendas.
+
+\- Devolução automática dos produtos ao estoque após cancelamento.
+
+\- Relatórios de vendas.
+
+\- Relatório de produtos mais vendidos.
+
+\- Relatório de estoque baixo.
+
+\- Resumo por forma de pagamento.
+
+\- Exportação de dados em CSV.
+
+\- Autenticação de usuários.
+
+\- Rotas protegidas.
+
+\- Senhas armazenadas utilizando scrypt.
+
+
+
+\## Tecnologias utilizadas
+
+
+
+\### Frontend
+
+\- React
+
+\- Vite
+
+\- JavaScript
+
+\- HTML
+
+\- CSS
+
+
+
+\### Backend
+
+\- Node.js
+
+\- Express
+
+
+
+\### Banco de dados
+
+\- PostgreSQL
+
+
+
+\## Estrutura do projeto
+
+
+
+```text
+
+EstoqueFacil/
+
+├── backend/
+
+│   ├── src/
+
+│   │   ├── controllers/
+
+│   │   ├── database/
+
+│   │   ├── middleware/
+
+│   │   └── routes/
+
+│   ├── tests/
+
+│   ├── .env.example
+
+│   └── package.json
+
+│
+
+├── frontend/
+
+│   ├── src/
+
+│   │   ├── components/
+
+│   │   ├── pages/
+
+│   │   └── App.jsx
+
+│   ├── .env.example
+
+│   └── package.json
+
+│
+
+├── database/
+
+│   └── schema.sql
+
+│
+
+├── .gitignore
+
+├── CHANGELOG.md
+
+└── README.md
+
